@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EnglishGyani - Learn English with News</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logon.png" type="image/png" >
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/578e02aff5.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+          
+  <style>
+  
+  body, html {
+    height: 100%;
+	background:#d8d8d8;
+	}
+	.top_body{
+		height:270px;
+		
+		background:gray;
+	}
+	.navigation{
+		height:90px;
+		width:100%;
+		background:black;
+		margin-bottom:0%;
+	}
+	.navigation_le{
+		margin-left:0%;
+		width:70%;
+		float:left;
+		height:100%;
+		position:relative;
+	
+	}
+	.navigation_ri{
+		margin-right:0%;
+		width:30%;
+		float:right;
+		height:100%;
+		position:relative;
+		
+	}
+	.navigation_title{
+		margin-left:20%;
+	}
+	.brand_name{
+			font-family: 'Dancing Script', cursive;
+			font-size:30px;
+			color:white;
+			padding-top:5px;
+	}
+	.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3 {background-color: #f44336;}
+.skip_test_ele{
+	margin-top:15px;
+}
+	
+		.test_inst{
+		
+			
+			width:100%;
+			height:180px;
+			margin-top:0%;
+		}
+		.test_inst_head{
+			margin-top:0%;
+		}
+		.test_inst_head > h3{
+			padding-top:1%;
+			padding-left:15%;
+			padding-right:15%;
+			text-align:justify;
+			line-height:150%;
+			font-size:20px;
+			
+		}
+		.body{
+			height:60%;
+			background:white;
+		}
+		.body_le{
+			width:40%;
+			margin-left:0%;
+			float:left;
+			position:relative;
+		}
+		.body_ri{
+			width:60%;
+			margin-right:0%;
+			float:right;
+			position:relative;
+		}
+		.question_image{
+			width:80%;
+			margin-left:10%;
+			margin-top:5%;
+			height:100%;
+			height:300px;
+		}
+		#boxshadow {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+}
+
+/* Make the image fit the box */
+#boxshadow img {
+    
+    border: 1px solid #8a4419;
+    border-style: inset;
+}
+
+#boxshadow::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+.question_body{
+	margin-top:5%;
+	margin-left:2%;
+
+}
+.question_body > p{
+	font-size:20px;
+
+}
+ input[type=radio]{
+	width:20px;
+    height:1.2em;
+}
+ label{
+  
+    height: 3em;
+}
+	
+	
+	@media only screen and (max-width: 1050px) {
+		.top_body{
+		height:300px;
+		
+		
+	}
+	.body_le{
+			width:50%;
+			margin-left:0%;
+			float:left;
+			position:relative;
+		}
+		.body_ri{
+			width:50%;
+			margin-right:0%;
+			float:right;
+			position:relative;
+		}
+	
+	
+		
+		.test_inst_head > h3{
+			padding-top:1%;
+			padding-left:10%;
+			padding-right:10%;
+			text-align:justify;
+			line-height:150%;
+			font-size:20px;
+			
+		}
+			
+	
+	}
+	@media only screen and (max-width: 750px) {
+			.body{
+			height:55%;
+			background:white;
+		}
+	
+			.navigation_title{
+				margin-left:5%;
+		}
+		.brand_name{
+		
+			font-size:20px;
+			
+	}
+		.skip_test_ele{
+		margin-top:20px;
+		margin-right:0%;
+		margin-top:25px;
+		}
+		
+		.top_body{
+		height:350px;
+		}
+		.test_inst_head > h3{
+			padding-left:5%;
+			padding-right:5%;
+		}
+		.body_le{
+			width:55%;
+			margin-left:0%;
+			float:left;
+			position:relative;
+		}
+		.body_ri{
+			width:45%;
+			margin-right:0%;
+			float:right;
+			position:relative;
+		}
+		.question_image{
+			width:90%;
+			margin-left:5%;
+		}
+		.question_body{
+		
+		margin-left:0%;
+
+		}
+	}
+	@media only screen and (max-width: 650px) {
+		.body{
+			height:100%;
+			background:white;
+		}
+		.test_inst_head > h3{
+			
+			font-size:17px;
+			
+		}
+		.body_le{
+			width:100%;
+			
+		}
+		.body_ri{
+			width:100%;
+		}
+		.question_body{
+			margin-left:5%;
+		
+		}
+		.button {
+		padding: 7px 16px;
+		font-size: 16px;
+		margin: 2px 1px;
+ 
+		}
+	
+	}
+	@media only screen and (max-width: 500px) {
+		.top_body{
+		height:340px;
+	}
+	
+	}
+	@media only screen and (max-width: 400px) {
+		.skip_test_ele{
+		
+		margin-top:15px;
+		}
+		.top_body{
+		height:360px;
+	}
+	.test_inst_head > h3{
+			
+			font-size:15px;
+			
+		}
+	
+	}
+
+	</style>
+	
+</head>
+<body>
+<div class="top_body">
+	<div class="navigation"> 
+		<div class="navigation_le">
+			<div class="navigation_title"> 
+				<h2 class="brand_name"> EnglishGyani Placement Test</h2>
+				
+			</div>
+		</div>
+		<div class="navigation_ri">
+			<div class="skip_test_ele">
+				<button class="button button3">Skip Test</button>
+			</div>
+		</div>
+		
+	</div>
+	<div class="test_inst">
+		<div class="test_inst_head">
+			<h3> Welcome to Englishgyani Placement 	Test! This test will help you discover your news reading level. All the questions uses real content from
+			Newspaper. Just read the questions and choose the answer correctly. The test contain 30 questions, but it will stop automatically when we have discovered 
+			your level. Good luck and have fun!
+			</h3>
+			
+		</div>
+		
+	</div>
+</div>
+<div class="body">
+	<div class="body_le">
+		<div class="question_image" id="boxshadow">
+			
+			<img src="https://d34yfym6wfrgx6.cloudfront.net/uploads/article/custom_image/130823/large_GettyImages-487396150.jpg" alt="Norway" style="width:100%;height:100%;">
+
+			
+		</div>
+	</div>
+	<div class="body_ri">
+		<div class="question_body">
+			<p> Which headlines goes with picture? 
+			</p>
+			<form action="">
+			  <label class="label1" for="male"> <input class="input1" type="radio" name="gender" value="male" id="male"> In future Tv will be same like Smart phones</label><br>
+			   <label for="female"> <input type="radio" name="gender" value="female" id="female">Apple is launching an APP for Tv</label><br>
+			   <label for="other"> <input type="radio" name="gender" value="other" id="other">Apple is launching a Tv</label><br><br>
+			  <button class="button button4">Check</button>
+			</form>
+		</div>
+		
+	
+	</div>
+
+
+</div>
+
+</body>
+</html>
